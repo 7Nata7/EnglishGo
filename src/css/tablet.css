@@ -177,4 +177,8 @@
   .extra {
     margin-top: 20px;
   }
+
+  .menu-open {
+    display: none;
+  }
 }

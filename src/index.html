@@ -56,6 +56,54 @@
   <body>
     <header class="ground container">
       <div class="top">
+        <!-- !MODAL_MENU -->
+        <main>
+          <div class="modal ground_modal is-hidden" data-menu>
+            <button type="button" class="mob-close" data-menu-close>
+              <svg width="8" height="8" class="mob-close-cross">
+                <use href="./images/icons.svg#icon-close-cross"></use>
+              </svg>
+            </button>
+
+            <h1 class="my_modal">Мои контакты:</h1>
+
+            <ul class="list_modal contacts_modal">
+              <li class="contact-item_modal">
+                <a
+                  class="link_modal mail_modal"
+                  href="mailto:pereyaslova1985@mail.ru"
+                  >pereyaslova1985@mail.ru</a
+                >
+              </li>
+              <li class="contact-item_modal">
+                <a class="link_modal phone_modal" href="tel:+79170693236"
+                  >+7 917 069 32 36</a
+                >
+              </li>
+            </ul>
+            <div class="soc-box_modal">
+              <ul class="list_modal soc-box_modal">
+                <li class="soc-items_modal">
+                  <a href="" class="soc-link_modal link_modal">
+                    <img src="./images/tg.png" alt="" width="35" />
+                  </a>
+                </li>
+                <li class="soc-items_modal">
+                  <a href="" class="soc-link_modal link_modal">
+                    <img src="./images/wu.png" alt="" width="30" />
+                  </a>
+                </li>
+                <li class="soc-items_modal">
+                  <a href="" class="soc-link_modal link_modal">
+                    <img src="./images/viber.png" alt="" width="30" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+
+        <!-- !MAIN INFO -->
         <div class="logo">
           <a href="/">
             <img
@@ -99,7 +147,18 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-open btn" data-menu-open>
+          <svg
+            class="menu-open-icon"
+            width="32"
+            height="22"
+            aria-label="on-off"
+          >
+            <use href="./images/icons.svg#icon-charm_menu"></use>
+          </svg>
+        </button>
       </div>
+
       <!-- Section 1 -->
       <section class="section one container">
         <!-- <div class="container"> -->
@@ -263,5 +322,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile_menu.js"></script>
   </body>
 </html>

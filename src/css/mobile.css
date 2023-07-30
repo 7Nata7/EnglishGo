@@ -314,29 +314,13 @@
   overflow-y: scroll;
 }
 
-.logo_modal {
-  width: 50px;
-  background-color: #fff;
-}
-.name_modal {
-  font-size: 18px;
-  margin-bottom: 10px;
-  font-family: 'Abril Fatface', cursive;
-  /* margin-right: 0; */
-  color: var(--violet);
-}
-.speech_modal {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--white);
-}
-
 .my_modal {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 700;
+  margin-bottom: 40px;
 }
 
-.list {
+.list_modal {
   display: flex;
   list-style: none;
   margin: 0;
@@ -346,13 +330,12 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 20px;
 }
-.contact-item_modal {
-}
-.link {
+
+.link_modal {
   text-decoration: none;
   color: var(--white);
-  font-size: 14px;
 }
 
 .link.mail_modal:before {
@@ -365,17 +348,63 @@
   margin-right: 8px;
 }
 
-.mail_modal {
-}
-.phone_modal {
-}
 .soc-box_modal {
   display: flex;
-  /* gap: 30px; */
+  gap: 50px;
   justify-content: space-around;
-  margin-left: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.soc-items_modal {
+
+.ground_modal {
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 192, 203, 1),
+    rgb(86, 23, 146)
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.soc-link_modal {
+
+.logo_modal {
+  margin-left: 100px;
+}
+
+.menu-open {
+  width: 32px;
+  height: 22px;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+
+.mob-close {
+  position: absolute;
+  top: 24px;
+  right: 50px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--modal-close-bc);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color var(--transition), fill var(--transition);
+}
+
+.mob-close-cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mob-close:hover,
+.mob-close:focus {
+  background-color: var(--first-active-color);
+  fill: var(--btn-color);
+}
+header {
+  position: relative;
 }

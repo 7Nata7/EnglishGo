@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="./css/mobile.css" />
   </head>
   <body>
-    <div class="modal ground">
-      <div>
-        <h1 class="name_modal">ENGLISHGO</h1>
-        <p class="speech_modal">Fast, interesting and cool!</p>
-      </div>
-      <div class="my_modal">Мои контакты</div>
+    <div class="modal ground_modal" data-menu>
+      <button type="button" class="mob-close" data-menu-close>
+        <svg width="8" height="8" class="mob-close-cross">
+          <use href="./images/icons.svg#icon-close-cross"></use>
+        </svg>
+      </button>
+
+      <h1 class="my_modal">Мои контакты:</h1>
 
       <ul class="list contacts_modal">
         <li class="contact-item_modal">
@@ -53,13 +55,14 @@
           </li>
         </ul>
       </div>
-      <div class="logo_modal ground">
+      <div class="logo_modal">
         <img
           src="./images/logo_englishgo.jpg"
           alt="EnglishGo Logo"
-          width="200"
+          width="100"
         />
       </div>
     </div>
+    <script src="./js/mobile_menu.js"></script>
   </body>
 </html>
